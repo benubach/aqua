@@ -12,7 +12,7 @@ const criteria = {
 
 const config = {
     $meta: 'This file configures the plot device.',
-    projectName: 'Aqua',
+    projectName: 'Community Events',
     port: {
         web: {
             $filter: 'env',
@@ -42,7 +42,7 @@ const config = {
                 $filter: 'env',
                 production: process.env.MONGODB_URI,
                 test: 'mongodb://localhost:27017/aqua-test',
-                $default: 'mongodb://localhost:27017/aqua'
+                $default: 'mongodb://mongocommevnts:mongocommevnts@ds033015.mlab.com:33015/nodecommevents'
             }
         },
         autoIndex: true
@@ -52,14 +52,14 @@ const config = {
         port: 465,
         secure: true,
         auth: {
-            user: 'jedireza@gmail.com',
+            user: 'benubach@gmail.com',
             pass: process.env.SMTP_PASSWORD
         }
     },
     system: {
         fromAddress: {
-            name: 'Aqua',
-            address: 'jedireza@gmail.com'
+            name: 'Community Events',
+            address: 'benubach@gmail.com'
         },
         toAddress: {
             name: 'Aqua',
